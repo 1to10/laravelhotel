@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('title')
-Add New Post
+Add New Hotel
 @endsection
 
 @section('content')

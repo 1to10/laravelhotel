@@ -23,10 +23,10 @@ Route::controllers([
 Route::group(['middleware' => ['auth']], function()
 {
 	// show new post form
-	Route::get('new-post','PostController@create');
+	Route::get('new-hotel','PostController@create');
 	
 	// save new post
-	Route::post('new-post','PostController@store');
+	Route::post('new-hotel','PostController@store');
 	
 	// edit post form
 	Route::get('edit/{slug}','PostController@edit');
@@ -38,7 +38,7 @@ Route::group(['middleware' => ['auth']], function()
 	Route::get('delete/{id}','PostController@destroy');
 	
 	// display user's all posts
-	Route::get('my-all-posts','UserController@user_posts_all');
+	Route::get('my-all-hotel','UserController@user_posts_all');
 	
 	// display user's drafts
 	Route::get('my-drafts','UserController@user_posts_draft');

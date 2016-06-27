@@ -52,7 +52,7 @@
 							<ul class="dropdown-menu" role="menu">
 								@if (Auth::user()->can_post())
 								<li>
-									<a href="{{ url('/new-post') }}">Add new Hotel</a>
+									<a href="{{ url('/new-hotel') }}">Add new Hotel</a>
 								</li>
 								<li>
 									<a href="{{ url('/user/'.Auth::id().'/posts') }}">My Hotel</a>
